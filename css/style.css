@@ -100,14 +100,9 @@ input:focus {
 
 input:valid {
   border: 1px solid darkgreen;
-  background-color: var(--text-color-light);
 }
 
-input:focus:valid {
-  border: 1px solid darkgreen;
-}
-
-input:focus:invalid {
+input:invalid {
   border: 1px solid brown;
 }
 

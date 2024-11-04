@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jua&family=Open+Sans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Project: Sign-up Form</title>
+  </head>
+  <body>
+    <aside>
+      <div class="logo">
+        <i class="fa-solid fa-mug-hot fa-2xl"></i>
+        <h1>Beanoo</h1>
+      </div>
+      <div class="attribution">
+        <p>
+          Photo by <a href="https://unsplash.com/@hansripa">Hans Ripa</a> on
+          <a href="https://unsplash.com/">Unsplash</a>
+        </p>
+      </div>
+    </aside>
+    <main>
+      <p>This is not a real online service!</p>
+      <p>
+        Indulge in the rich flavors of our exotic coffee beans and awaken your
+        senses. At <strong>Beanoo</strong>, we believe every cup is a journey to
+        your dreams. Join us <em>now</em> to explore unique blends that inspire
+        creativity and elevate your coffee experience.
+      </p>
+      <p>You <em>know</em> you crave it.</p>
+
+      <h2>Let's do it!</h2>
+      <form action="">
+        <div class="form-group">
+          <label for="firstName">FIRST NAME</label>
+          <label for="lastName">LAST NAME</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            id="firstName"
+            placeholder="Enter your first name"
+            required
+          />
+          <input
+            type="text"
+            id="lastName"
+            placeholder="Enter your last name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">EMAIL</label>
+          <label for="phoneNumber">PHONE NUMBER</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="email"
+            id="email"
+            placeholder="example@email.com"
+            required
+          />
+          <input
+            type="tel"
+            id="phoneNumber"
+            placeholder="e.g., 555-123-4567"
+            pattern="\d{3}-\d{3}-\d{4}"
+            title="Format: 555-123-4567"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">PASSWORD</label>
+          <label for="pswConfirm">CONFIRM PASSWORD</label>
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="password"
+            pattern="(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}"
+            title="Must contain at least 8 characters, 1 uppercase letter, 1 number, and 1 special character."
+            placeholder="Enter your password"
+            required
+          />
+          <input
+            type="password"
+            id="pswConfirm"
+            placeholder="Confirm your password"
+            pattern="(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}"
+            required
+          />
+        </div>
+
+        <button type="submit">Create Account</button>
+      </form>
+      <p>Already have an account? <a href="">Log In</a></p>
+    </main>
+  </body>
+</html>

@@ -98,6 +98,10 @@ input:focus {
   transition: background 0.2s;
 }
 
+input:valid {
+  border: 1px solid darkgreen;
+}
+
 input:focus:valid {
   border: 1px solid darkgreen;
 }
